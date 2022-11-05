@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const admin = require('./middlewares/admin');
 
 //init
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 const DB = process.env.MONGO_DB_URI
 
